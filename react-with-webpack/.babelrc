@@ -1,0 +1,31 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "corejs": 3,
+                "useBuiltIns": "usage", //"entry",
+                "targets": [
+                    "last 2 versions",
+                    "not dead",
+                    ">= 2%",
+                    "not IE 11"
+                ]
+                // "targets": {
+                //     "browsers": ["chrome >= 68"]
+                // }
+            }
+        ],
+        [
+            "@babel/preset-react"
+        ],
+        [
+            "@babel/preset-typescript"
+        ]
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-class-properties",
+        "react-hot-loader/babel",
+        "@babel/plugin-syntax-dynamic-import"
+    ]
+}
